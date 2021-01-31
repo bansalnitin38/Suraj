@@ -1,0 +1,13 @@
+#bp{
+position: absolute;
+height: 190%;
+width: 100%;
+display: block;
+border-radius: 120px;
+background: linear-gradient(-47deg, #F956CB 0%, #F74B54 100%);
+bottom: 0;
+right: 0;
+-webkit-transform: translate(35%, -28%) rotate(-35deg);
+transform: translate(35%, -28%) rotate(-35deg);
+z-index: 0;
+}
