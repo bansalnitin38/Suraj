@@ -14,6 +14,7 @@ import { MatCarousel, MatCarouselComponent } from 'ng-mat-carousel';
 import { AboutUsComponent } from './component/about-us/about-us.component';
 import { ContactUsComponent } from './component/contact-us/contact-us.component';
 import { MoreDetailsComponent } from './component/more-details/more-details.component';
+import { TermsAndConditionComponent } from './component/terms-and-condition/terms-and-condition.component';
 
 
 
@@ -26,6 +27,7 @@ import { MoreDetailsComponent } from './component/more-details/more-details.comp
     AboutUsComponent,
     ContactUsComponent,
     MoreDetailsComponent,
+    TermsAndConditionComponent,
   ],
   imports: [
     BrowserModule,

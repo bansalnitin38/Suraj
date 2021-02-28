@@ -1,0 +1,7 @@
+.text:hover{
+    color: white;
+
+}
+.active{
+    background-color: #6610f2;
+}
