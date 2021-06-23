@@ -16,8 +16,6 @@ import { ContactUsComponent } from './component/contact-us/contact-us.component'
 import { MoreDetailsComponent } from './component/more-details/more-details.component';
 import { TermsAndConditionComponent } from './component/terms-and-condition/terms-and-condition.component';
 
-
-
 @NgModule({
   declarations: [
     AppComponent,

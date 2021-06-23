@@ -1,72 +1,65 @@
 <div>
     <div fxLayout="row wrap">
-        <div fxFlexOffset.gt-sm="15" fxFlexOffset="5" fxFlex="90" fxFlex.gt-sm="70" class="mat-elevation-z mt-2">
+        <div fxFlex="90" fxFlex.gt-sm="100" class="mat-elevation-z mt-2">
             <div>
-                <mat-carousel
-                    timings="250ms ease-in"
-                    [autoplay]="true"
-                    interval="5000"
-                    color="accent"
-                    maxWidth="auto"
-                    proportion="25"
-                    slides="5"
-                    [loop]="true"
-                    [hideArrows]="false"
-                    [hideIndicators]="false"
-                    [useKeyboard]="true"
-                    [useMouseWheel]="false"
-                    orientation="ltr"
-                    >
-                    <mat-carousel-slide
-                        #matCarouselSlide
-                        *ngFor="let slide of slides; let i = index"
-                        [image]="slide.image"
-                        overlayColor="#00000040"
-                        [hideOverlay]="false"
-                    ></mat-carousel-slide>
+                <mat-carousel timings="250ms ease-in" [autoplay]="true" interval="5000" color="accent" maxWidth="auto"
+                    proportion="25" slides="5" [loop]="true" [hideArrows]="false" [hideIndicators]="false"
+                    [useKeyboard]="true" [useMouseWheel]="false" orientation="ltr">
+                    <mat-carousel-slide #matCarouselSlide *ngFor="let slide of slides; let i = index"
+                        [image]="slide.image" overlayColor="#00000040" [hideOverlay]="false"></mat-carousel-slide>
                 </mat-carousel>
             </div>
             <h1 class="mt-4 text-center h2 ">Our <span style="color: brown;">Product</span></h1>
-            <div fxLayout="row wrap" >
-                <div  fxFlex="100" fxFlex.gt-sm="33"  *ngFor="let row of products">
+            <div fxLayout="row wrap">
+                <div fxFlex="100" fxFlex.gt-sm="20" *ngFor="let row of products">
                     <mat-card class="m-2 mat-elevation-z8">
                         <mat-card-header>
                             <mat-card-title>Monoblock</mat-card-title>
                         </mat-card-header>
-                        <img mat-card-image style="width: 100%; max-height: 291px !important;" src="{{row.image}}" alt="Monoblock">
+                        <img mat-card-image style="width: 100%; max-height: 291px !important;" src="{{row.image}}"
+                            alt="Monoblock">
                         <mat-card-actions>
-                            <button mat-raised-button color="primary">Enquiry</button>
-                            <button  mat-stroked-button color="primary" (click)="moreDetails(row)" >More Details</button>
+                            <!-- <button mat-raised-button color="primary">Enquiry</button> -->
+                            <button mat-stroked-button color="primary" (click)="moreDetails(row)">More Details</button>
                         </mat-card-actions>
                     </mat-card>
                 </div>
             </div>
         </div>
         <div fxFlex="100" class="mt-4 bg-white">
-            <div fxFlexOffset="5"  fxFlex="90" fxFlexOffset.gt-sm="15" fxFlex.gt-sm="70">
+            <div fxFlexOffset="5" fxFlex="90" fxFlexOffset.gt-sm="15" fxFlex.gt-sm="70">
                 <div fxLayout="row wrap" class="my-4">
                     <div fxFlex="100" fxFlex.gt-sm="60" class="pr-4">
                         <h2 class="text-center">Why <span style="color: brown;">Us</span></h2>
                         <p>
-                           Gs Nirmal dhara the paramount Indian manufacturer of Pumps, Gs Nirmal Dhara has developed and marketed a wide range of products for various applications. Today the product lines include Monoblock, Submersible Pumps.
+                            Gs Nirmal dhara the paramount Indian manufacturer of Pumps, Gs Nirmal Dhara has developed
+                            and marketed a wide range of products for various applications. Today the product lines
+                            include Monoblock, Submersible Pumps.
 
-                        Today Gs Nirmal dhara Pumps provide the dependable source of pumping energy, once used they never fail to get commendation for their superb performance and quality from our users.
+                            Today Gs Nirmal dhara Pumps provide the dependable source of pumping energy, once used they
+                            never fail to get commendation for their superb performance and quality from our users.
 
-                        Submersible pumps are found in many applications:
+                            Submersible pumps are found in many applications:
 
-                        Single stage pumps are used for borewell pump.
+                            Single stage pumps are used for borewell pump.
 
-                        Multiple stage submersible pumps are typically lowered down a borehole and most typically used for residential, commercial, industrial water extraction (abstraction), municipal, oil wells and in water wells 
+                            Multiple stage submersible pumps are typically lowered down a borehole and most typically
+                            used for residential, commercial, industrial water extraction (abstraction), municipal, oil
+                            wells and in water wells
 
-                        Other uses for submersible pumps include sewage treatment plants, seawater handling, fire fighting (since it has flame retardant cable), water well and deep well drilling, offshore drilling rigs, artificial lifts, mine dewatering, and irrigation systems.
+                            Other uses for submersible pumps include sewage treatment plants, seawater handling, fire
+                            fighting (since it has flame retardant cable), water well and deep well drilling, offshore
+                            drilling rigs, artificial lifts, mine dewatering, and irrigation systems.
 
-                        Pumps in electrical hazardous locations used for combustible liquids or for water that may be contaminated with combustible liquids must be designed not to ignite the liquid or vapours.
+                            Pumps in electrical hazardous locations used for combustible liquids or for water that may
+                            be contaminated with combustible liquids must be designed not to ignite the liquid or
+                            vapours.
 
 
                         </p>
                     </div>
-                    <div  class="mat-elevation-z" fxFlex="100" fxFlex.gt-sm="40" style=" margin: auto;">
-                        <img style="margin:auto" class="mat-elevation-z8" src="/assets/image/submersible-pump.jpeg" >
+                    <div class="mat-elevation-z" fxFlex="100" fxFlex.gt-sm="40" style=" margin: auto;">
+                        <img style="margin:auto" class="mat-elevation-z8" src="/assets/image/submersible-pump.jpeg">
                     </div>
                 </div>
             </div>
@@ -81,20 +74,28 @@
                 <h3>
                     Contact
                 </h3>
-                <p><mat-icon>call</mat-icon> &nbsp; &nbsp; 8448328646</p>
-                <p><mat-icon>email</mat-icon> &nbsp; &nbsp; </p>
-                 <div class="col-lg-6 text-lg-center btn-wrapper">
-                    <a target="_blank" href="https://twitter.com/creativetim" class="btn btn-neutral btn-icon-only btn-twitter btn-round btn-lg" ngbTooltip="Follow us">
-                    <i class="fa fa-twitter"></i>
+                <p>
+                    <mat-icon>call</mat-icon> &nbsp; &nbsp; 8448328646
+                </p>
+                <p>
+                    <mat-icon>email</mat-icon> &nbsp; &nbsp;
+                </p>
+                <div class="col-lg-6 text-lg-center btn-wrapper">
+                    <a target="_blank" href="https://twitter.com/creativetim"
+                        class="btn btn-neutral btn-icon-only btn-twitter btn-round btn-lg" ngbTooltip="Follow us">
+                        <i class="fa fa-twitter"></i>
                     </a>
-                    <a target="_blank" href="https://www.facebook.com/creativetim" class="btn btn-neutral btn-icon-only btn-facebook btn-round btn-lg" ngbTooltip="Like us">
-                    <i class="fa fa-facebook-square"></i>
+                    <a target="_blank" href="https://www.facebook.com/creativetim"
+                        class="btn btn-neutral btn-icon-only btn-facebook btn-round btn-lg" ngbTooltip="Like us">
+                        <i class="fa fa-facebook-square"></i>
                     </a>
-                    <a target="_blank" href="https://dribbble.com/creativetim" class="btn btn-neutral btn-icon-only btn-dribbble btn-lg btn-round" ngbTooltip="Follow us">
-                    <i class="fa fa-dribbble"></i>
+                    <a target="_blank" href="https://dribbble.com/creativetim"
+                        class="btn btn-neutral btn-icon-only btn-dribbble btn-lg btn-round" ngbTooltip="Follow us">
+                        <i class="fa fa-dribbble"></i>
                     </a>
-                    <a target="_blank" href="https://github.com/creativetimofficial" class="btn btn-neutral btn-icon-only btn-github btn-round btn-lg" ngbTooltip="Star on Github">
-                    <i class="fa fa-github"></i>
+                    <a target="_blank" href="https://github.com/creativetimofficial"
+                        class="btn btn-neutral btn-icon-only btn-github btn-round btn-lg" ngbTooltip="Star on Github">
+                        <i class="fa fa-github"></i>
                     </a>
                 </div>
             </div>
@@ -106,20 +107,25 @@
 
             </div>
             <div fxFlex="100" fxFlex.gt-sm="25">
-                <h3 >
-                    Customer Care 
+                <h3>
+                    Customer Care
                 </h3>
-                <p class="float-left">If you have any issue with Submersible Pump  you can contact us in any of the following ways
-                <br> call: 8448328646
-                <br> email :                 </p>
+                <p class="float-left">If you have any issue with Submersible Pump you can contact us in any of the
+                    following ways
+                    <br> call: 8448328646
+                    <br> email :
+                </p>
             </div>
             <div fxFlex="100" fxFlex.gt-sm="25">
                 <h3>
                     GsNirmalDhara
                 </h3>
-                <p>Disclamer: The product color and shades displayed on this website are only indicative and cannot be considered to be a precise representation of actual color</p>
+                <p>Disclamer: The product color and shades displayed on this website are only indicative and cannot be
+                    considered to be a precise representation of actual color</p>
             </div>
         </div>
     </div>
 </div>
-<div style="background-color: #001144; height: 30px;" class="text-center text-muted justify-content-center "><small >Copyright</small></div>
+<div style="background-color: #001144; height: 30px;" class="text-center text-muted justify-content-center ">
+    <small>Copyright</small>
+</div>

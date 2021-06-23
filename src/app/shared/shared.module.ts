@@ -36,9 +36,11 @@ import { MatSliderModule } from "@angular/material/slider";
 import { MatToolbarModule } from "@angular/material/toolbar";
 import { MatCarousel, MatCarouselComponent } from 'ng-mat-carousel';
 import { MatCarouselModule } from 'ng-mat-carousel';
+// import { MatFormFieldModule } from '@angular/material/form-field';
+
 // import {MatListModule} from '@angular/material/list';
 // import { MatMomentDateModule } from "@angular/material-moment-adapter";
-
+// import { MatInputModule } from '@angular/material/input';
 
 @NgModule({
   exports: [
@@ -83,4 +85,4 @@ import { MatCarouselModule } from 'ng-mat-carousel';
     // MatCarousel,
   ]
 })
-export class SharedMaterialModule {}
+export class SharedMaterialModule { }
