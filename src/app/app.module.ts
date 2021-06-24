@@ -15,6 +15,7 @@ import { AboutUsComponent } from './component/about-us/about-us.component';
 import { ContactUsComponent } from './component/contact-us/contact-us.component';
 import { MoreDetailsComponent } from './component/more-details/more-details.component';
 import { TermsAndConditionComponent } from './component/terms-and-condition/terms-and-condition.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { TermsAndConditionComponent } from './component/terms-and-condition/term
     AppRoutingModule,
     BrowserAnimationsModule,
     SharedMaterialModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

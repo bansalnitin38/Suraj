@@ -1,6 +1,6 @@
 <div>
     <div fxLayout="row wrap">
-        <div fxFlex="90" fxFlex.gt-sm="100" class="mat-elevation-z mt-2">
+        <div fxFlex="100" fxFlex.gt-sm="100" class="mat-elevation-z ">
             <div>
                 <mat-carousel timings="250ms ease-in" [autoplay]="true" interval="5000" color="accent" maxWidth="auto"
                     proportion="25" slides="5" [loop]="true" [hideArrows]="false" [hideIndicators]="false"
@@ -9,15 +9,16 @@
                         [image]="slide.image" overlayColor="#00000040" [hideOverlay]="false"></mat-carousel-slide>
                 </mat-carousel>
             </div>
-            <h1 class="mt-4 text-center h2 ">Our <span style="color: brown;">Product</span></h1>
+            <h1 class="mt-4 text-center h1 ">Our <span style="color: brown;">Product</span></h1>
             <div fxLayout="row wrap">
-                <div fxFlex="100" fxFlex.gt-sm="20" *ngFor="let row of products">
+                <div fxFlex="50" fxFlex.gt-sm="20" *ngFor="let row of products">
                     <mat-card class="m-2 mat-elevation-z8">
                         <mat-card-header>
                             <mat-card-title>Monoblock</mat-card-title>
                         </mat-card-header>
-                        <img mat-card-image style="width: 100%; max-height: 291px !important;" src="{{row.image}}"
-                            alt="Monoblock">
+
+                        <img mat-card-image style="width: auto; max-height: 250px;" src="{{row.image}}" alt="Monoblock">
+
                         <mat-card-actions>
                             <!-- <button mat-raised-button color="primary">Enquiry</button> -->
                             <button mat-stroked-button color="primary" (click)="moreDetails(row)">More Details</button>
@@ -30,8 +31,9 @@
             <div fxFlexOffset="5" fxFlex="90" fxFlexOffset.gt-sm="15" fxFlex.gt-sm="70">
                 <div fxLayout="row wrap" class="my-4">
                     <div fxFlex="100" fxFlex.gt-sm="60" class="pr-4">
-                        <h2 class="text-center">Why <span style="color: brown;">Us</span></h2>
-                        <p>
+                        <h2 class="text-center h1">Why <span style="color: brown;">Us</span></h2>
+                        <p style="line-height:30px">
+
                             Gs Nirmal dhara the paramount Indian manufacturer of Pumps, Gs Nirmal Dhara has developed
                             and marketed a wide range of products for various applications. Today the product lines
                             include Monoblock, Submersible Pumps.
@@ -54,8 +56,6 @@
                             Pumps in electrical hazardous locations used for combustible liquids or for water that may
                             be contaminated with combustible liquids must be designed not to ignite the liquid or
                             vapours.
-
-
                         </p>
                     </div>
                     <div class="mat-elevation-z" fxFlex="100" fxFlex.gt-sm="40" style=" margin: auto;">
@@ -67,20 +67,51 @@
     </div>
 </div>
 
-<div style="background-color:#131f65;" class="pt-4 mt-4">
+<div color="primary" style="background-color: #3F51B5;" class="mt-4">
+    <div fxLayout="row wrap" class="text-white">
+        <span fxFlex="40" style="font-weight: 300;" class="text-center p-2 py-3 h5 m-0"> Get connected with us on social
+            networks! </span>
+        <span fxFlex="40"> </span>
+        <span fxFlex="20" class="text-center p-2 py-3 h5 m-0">
+            <span>
+                <mat-icon>facebook</mat-icon> &nbsp; &nbsp;
+            </span>
+        </span>
+
+    </div>
+</div>
+
+<div style="background-color:#1c2331;">
     <div class="container text-white">
         <div fxLayout="row wrap">
-            <div fxFlex="100" fxFlex.gt-sm="25">
-                <h3>
-                    Contact
-                </h3>
-                <p>
-                    <mat-icon>call</mat-icon> &nbsp; &nbsp; 8448328646
+            <div fxFlex="100" fxFlex.gt-sm="33" class="p-4">
+                <h3> Contact </h3>
+                <p fxLayout="row wrap">
+                    <span fxFlex="20">
+                        <mat-icon>call</mat-icon> &nbsp; &nbsp;
+                    </span>
+                    <span fxFlex="80" class="fotter-text">
+                        8448328646
+                    </span>
                 </p>
                 <p>
-                    <mat-icon>email</mat-icon> &nbsp; &nbsp;
+                    <span fxFlex="20">
+                        <mat-icon>email</mat-icon> &nbsp; &nbsp;
+                    </span>
+                    <span fxFlex="80" class="fotter-text">
+                        girirajsingh@gmail.com
+                    </span>
                 </p>
-                <div class="col-lg-6 text-lg-center btn-wrapper">
+                <p>
+                    <span fxFlex="20">
+                        <mat-icon>home</mat-icon> &nbsp; &nbsp;
+                    </span>
+                    <span fxFlex="80" class="fotter-text">
+                        Plot no. 68 , rajeev colony Sec-56,
+                        near Fogat School
+                    </span>
+                </p>
+                <!-- <div class="col-lg-6 text-lg-center btn-wrapper">
                     <a target="_blank" href="https://twitter.com/creativetim"
                         class="btn btn-neutral btn-icon-only btn-twitter btn-round btn-lg" ngbTooltip="Follow us">
                         <i class="fa fa-twitter"></i>
@@ -97,35 +128,33 @@
                         class="btn btn-neutral btn-icon-only btn-github btn-round btn-lg" ngbTooltip="Star on Github">
                         <i class="fa fa-github"></i>
                     </a>
-                </div>
+                </div> -->
             </div>
-            <div fxFlex="100" fxFlex.gt-sm="25">
+            <!-- <div fxFlex="100" fxFlex.gt-sm="25">
                 <h3>
                     Address
                 </h3>
-                <p style="line-height: 40px;">Plot no. 68 , rajeev colony Sec-56, <br> near Fogat School </p>
+                <p class="fotter-text">Plot no. 68 , rajeev colony Sec-56, <br> near Fogat School </p>
 
-            </div>
-            <div fxFlex="100" fxFlex.gt-sm="25">
-                <h3>
-                    Customer Care
-                </h3>
-                <p class="float-left">If you have any issue with Submersible Pump you can contact us in any of the
+            </div> -->
+            <div fxFlex="100" fxFlex.gt-sm="33" class="p-4">
+                <h3> Customer Care </h3>
+                <p class="float-left fotter-text">If you have any issue with Submersible Pump you can contact us in any
+                    of the
                     following ways
                     <br> call: 8448328646
                     <br> email :
                 </p>
             </div>
-            <div fxFlex="100" fxFlex.gt-sm="25">
-                <h3>
-                    GsNirmalDhara
-                </h3>
-                <p>Disclamer: The product color and shades displayed on this website are only indicative and cannot be
+            <div fxFlex="100" fxFlex.gt-sm="33" class="p-4">
+                <h3> GsNirmalDhara </h3>
+                <p class="fotter-text">Disclamer: The product color and shades displayed on this website are only
+                    indicative and cannot be
                     considered to be a precise representation of actual color</p>
             </div>
         </div>
     </div>
 </div>
-<div style="background-color: #001144; height: 30px;" class="text-center text-muted justify-content-center ">
+<div style="background-color: #161c27; height: 30px;" class="text-center text-muted justify-content-center ">
     <small>Copyright</small>
 </div>
