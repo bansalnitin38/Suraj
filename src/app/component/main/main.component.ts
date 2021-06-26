@@ -24,7 +24,7 @@ export class MainComponent implements OnInit {
   // Slider Images
   slides = [{ 'image': '/assets/image/slide-03.jpg' },
   { 'image': '/assets/image/banner.png' },
-    // { 'image': 'https://gsr.dev/material2-carousel/assets/demo.png' },
+  { 'image': 'https://submersible-pumps.in/wp-content/plugins/phastpress/phast.php/c2VydmljZT1pbWFnZXMmc3JjPWh0dHBzJTNBJTJGJTJGc3VibWVyc2libGUtcHVtcHMuaW4lMkZ3cC1jb250ZW50JTJGdXBsb2FkcyUyRjIwMjAlMkYwMSUyRkJhbm5lci0xLmpwZyZjYWNoZU1hcmtlcj0xNjA3NTczOTUzLTE1NzUyNSZ0b2tlbj1kZjViZDk5OWJjYzE3MGIz.q.jpg' },
     // { 'image': 'https://gsr.dev/material2-carousel/assets/demo.png' }, 
     // { 'image': 'https://gsr.dev/material2-carousel/assets/demo.png' }
   ];
