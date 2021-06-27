@@ -1,10 +1,22 @@
 <mat-card mat-elevation-z8 class="m-4">
 
     <p class="text-center h2">Our Products</p>
-    <div fxLayout="row wrap" *ngFor="let product of products" class="container">
-        <div fxFlex="70" fxFlexOffset="15" fxFlexOffset.gt-sm="0" fxFlex.gt-sm="20">
+
+    <div>
+        <mat-form-field appearance="fill">
+            <mat-label>Select Motor Type</mat-label>
+            <mat-select [(ngModel)]='selectedType' (ngModelChange)="filterProduct()">
+                <mat-option value="">All</mat-option>
+                <mat-option value="monoblock">Mono Block</mat-option>
+                <mat-option value="submersible">Submersible</mat-option>
+            </mat-select>
+        </mat-form-field>
+    </div>
+
+    <div fxLayout="row wrap" *ngFor="let product of productList" class="container">
+        <div fxFlex="70" class="p-1" fxFlexOffset="15" fxFlexOffset.gt-sm="0" fxFlex.gt-sm="20">
             <span style="max-height: 100px;max-width: 100px;">
-                <img style="width:100%" [src]="product.image" alt="monoblock">
+                <img class="p-1" style="width:100%" [src]="product.image" alt="monoblock">
             </span>
         </div>
         <div fxFlex="100" fxFlexOffset="10" fxFlex.gt-sm="70" class="p-4">

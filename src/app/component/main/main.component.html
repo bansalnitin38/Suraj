@@ -11,17 +11,16 @@
             </div>
             <h1 class="mt-4 text-center h1 ">Our <span style="color: brown;">Product</span></h1>
             <div fxLayout="row wrap">
-                <div fxFlex="50" fxFlex.gt-sm="20" *ngFor="let row of products">
-                    <mat-card class="m-2 mat-elevation-z8">
+                <div fxFlex="50" fxFlex.gt-sm="20" fxFlexFill *ngFor="let row of products">
+                    <mat-card class="m-2 mat-elevation-z8 " style="max-height: 440px; min-height: 440px;">
                         <mat-card-header>
                             <mat-card-title>Monoblock</mat-card-title>
                         </mat-card-header>
-
-                        <img mat-card-image src="{{row.image}}" alt="Monoblock">
-
-                        <mat-card-actions>
-                            <!-- <button mat-raised-button color="primary">Enquiry</button> -->
-                            <button mat-stroked-button color="primary" (click)="moreDetails(row)">More Details</button>
+                        <div style="height: 325px;" class="align-center p-2">
+                            <img mat-card-image src="{{row.image}}" alt="Monoblock">
+                        </div>
+                        <mat-card-actions fxLayoutAlign="start end">
+                            <button mat-raised-button color="primary" (click)="moreDetails(row)">More Details</button>
                         </mat-card-actions>
                     </mat-card>
                 </div>

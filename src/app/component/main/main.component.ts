@@ -48,7 +48,7 @@ export class MainComponent implements OnInit {
 
     },
     {
-      image: '/assets/image/Monoblock-Pump.jpg',
+      image: '/assets/image/mon4.jpeg',
       head: " upto 55 Mtr",
       discharge: " upto 50 LPM ",
       power_rating: " 1.0 HP / 0.75KW",
@@ -57,7 +57,7 @@ export class MainComponent implements OnInit {
 
     },
     {
-      image: '/assets/image/monoblock.jpg',
+      image: '/assets/image/mono5.jpeg',
       head: " upto 50 Mtr",
       discharge: " upto 45 LPM ",
       power_rating: " 1.0 HP / 0.75KW",
@@ -66,7 +66,7 @@ export class MainComponent implements OnInit {
 
     },
     {
-      image: '/assets/image/monoblock.jpg',
+      image: '/assets/image/mono2.jpeg',
       head: " upto 50 Mtr",
       discharge: " upto 45 LPM ",
       power_rating: " 1.0 HP / 0.75KW",
@@ -75,7 +75,7 @@ export class MainComponent implements OnInit {
 
     },
     {
-      image: '/assets/image/monoblock.jpg',
+      image: '/assets/image/mono3.jpeg',
       head: " upto 50 Mtr",
       discharge: " upto 45 LPM ",
       power_rating: " 1.0 HP / 0.75KW",
