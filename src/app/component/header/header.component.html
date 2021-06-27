@@ -9,7 +9,7 @@
                 <span class="mat-button-focus"></span>
             </a>
 
-            <span class="float-right">
+            <span [ngStyle.xs]="{'display' : 'none'}" class="float-right">
                 <a routerLink="/home" routerLinkActive="active" mat-button
                     class="text mat-focus-indicator docs-navbar-hide-small docs-button mat-button mat-button-base ng-star-inserted">
                     <span class="mat-button-wrapper "> Home</span>
@@ -42,6 +42,54 @@
                     <span class="mat-button-focus"></span>
                 </a>
             </span>
+
+            <button style="float: right;" [ngStyle.gt-sm]="{'display' : 'none'}" mat-icon-button
+                [matMenuTriggerFor]="menu">
+                <mat-icon>menu</mat-icon>
+            </button>
+            <mat-menu #menu="matMenu">
+                <button mat-menu-item>
+                    <a routerLink="/home" routerLinkActive="active" mat-button
+                        class="text mat-focus-indicator docs-navbar-hide-small docs-button mat-button mat-button-base ng-star-inserted">
+                        <span class="mat-button-wrapper "> Home</span>
+                        <span matripple class="mat-ripple mat-button-ripple "></span>
+                        <span class="mat-button-focus"></span>
+                    </a>
+                </button>
+                <button mat-menu-item>
+                    <a routerLink="/products" routerLinkActive="active" mat-button
+                        class="text mat-focus-indicator docs-navbar-hide-small docs-button mat-button mat-button-base ng-star-inserted">
+                        <span class="mat-button-wrapper">Product
+                        </span>
+                        <span matripple class="mat-ripple mat-button-ripple "></span>
+                        <span class="mat-button-focus"></span>
+                    </a>
+                </button>
+                <button mat-menu-item>
+                    <a routerLink="/aboutus" routerLinkActive="active" mat-button
+                        class="text mat-focus-indicator docs-navbar-hide-small docs-button mat-button mat-button-base ng-star-inserted">
+                        <span class="mat-button-wrapper "> About Us</span>
+                        <span matripple class="mat-ripple mat-button-ripple "></span>
+                        <span class="mat-button-focus"></span>
+                    </a>
+                </button>
+                <button mat-menu-item>
+                    <a routerLink="/termandcondition" routerLinkActive="active" mat-button
+                        class="text mat-focus-indicator docs-navbar-hide-small docs-button mat-button mat-button-base ng-star-inserted">
+                        <span class="mat-button-wrapper "> T & C</span>
+                        <span matripple class="mat-ripple mat-button-ripple "></span>
+                        <span class="mat-button-focus"></span>
+                    </a>
+                </button>
+                <button mat-menu-item>
+                    <a routerLink="/contactus" routerLinkActive="active" mat-button
+                        class="text mat-focus-indicator docs-navbar-hide-small docs-button mat-button mat-button-base ng-star-inserted">
+                        <span class="mat-button-wrapper "> Contact Us</span>
+                        <span matripple class="mat-ripple mat-button-ripple "></span>
+                        <span class="mat-button-focus"></span>
+                    </a>
+                </button>
+            </mat-menu>
 
         </div>
     </mat-toolbar>

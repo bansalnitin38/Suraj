@@ -1,4 +1,4 @@
-<mat-card mat-elevation-z8 class="m-4">
+<mat-card mat-elevation-z8 [ngClass.gt-sm]="['m-4']" [ngClass.xs]="['m-2']">
 
     <p class="text-center h2">Our Products</p>
 
@@ -13,15 +13,15 @@
         </mat-form-field>
     </div>
 
-    <div fxLayout="row wrap" *ngFor="let product of productList" class="container">
-        <div fxFlex="70" class="p-1" fxFlexOffset="15" fxFlexOffset.gt-sm="0" fxFlex.gt-sm="20">
-            <span style="max-height: 100px;max-width: 100px;">
-                <img class="p-1" style="width:100%" [src]="product.image" alt="monoblock">
+    <div fxLayout="row wrap" *ngFor="let product of productList" [ngClass.gt-sm]="['container']">
+        <div fxFlex="70" fxFlexOffset="15" fxFlexOffset.gt-sm="0" fxFlex.gt-sm="20">
+            <span class="p-1" style="max-height: 100px;max-width: 100px;">
+                <img style="width:100%" [src]="product.image" alt="monoblock">
             </span>
         </div>
-        <div fxFlex="100" fxFlexOffset="10" fxFlex.gt-sm="70" class="p-4">
+        <div fxFlex="100" fxFlexOffset="10" fxFlex.gt-sm="70" [ngClass.gt-sm]="['p-4']">
             <div fxLayout="row wrap">
-                <span fxFlex="100" fxFlex.gt-sm="50">
+                <span fxFlex="100" fxFlex.gt-sm="50" class="pt-1">
                     <strong>Head</strong> : {{product.head}} <br>
                     <br>
                     <strong>Discharge</strong> : {{product.discharge}} <br><br>

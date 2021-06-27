@@ -1,8 +1,8 @@
-<mat-card class="m-4">
+<mat-card [ngClass.gt-sm]="['m-4']" [ngClass.xs]="['m-2']">
 
     <div fxLayout="row wrap">
-        <span fxFlex="100" fxFlex.gt-sm="50" class="p-5">
-            <div class="term-and-condition container">
+        <span fxFlex="100" fxFlex.gt-sm="50" [ngClass.gt-sm]="['p-5']">
+            <div [ngClass.gt-sm]="['term-and-condition',' container']" class="">
                 <h1 style="line-height: initial;">
                     Terms And Condition
                 </h1>
@@ -17,8 +17,9 @@
             </div>
         </span>
 
-        <span fxFlex.gt-sm="50">
-            <img style="width: auto;height: 500px;" src="assets/image/termandcondition.png" alt="">
+        <span fxFlex.gt-sm="50" [ngStyle.md]="{'display': 'block'}">
+            <img [ngStyle.gt-sm]="{'width': 'auto' , 'height.px':500}"
+                [ngStyle.xs]="{'width.px':300 , 'height' : 'auto'}" src="assets/image/termandcondition.png" alt="">
         </span>
     </div>
 

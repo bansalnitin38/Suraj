@@ -1,6 +1,6 @@
 <div>
     <div fxLayout="row wrap">
-        <div fxFlex="100" fxFlex.gt-sm="100" class="mat-elevation-z ">
+        <div fxFlex="100" fxFlex.gt-sm="100" class="mat-elevation-z">
             <div>
                 <mat-carousel timings="250ms ease-in" [autoplay]="true" interval="5000" color="accent" maxWidth="auto"
                     proportion="25" slides="5" [loop]="true" [hideArrows]="false" [hideIndicators]="false"
@@ -12,11 +12,12 @@
             <h1 class="mt-4 text-center h1 ">Our <span style="color: brown;">Product</span></h1>
             <div fxLayout="row wrap">
                 <div fxFlex="50" fxFlex.gt-sm="20" fxFlexFill *ngFor="let row of products">
-                    <mat-card class="m-2 mat-elevation-z8 " style="max-height: 440px; min-height: 440px;">
+                    <mat-card class="m-2 mat-elevation-z8 " [ngStyle.md]="{'max-height.px': 440}">
                         <mat-card-header>
                             <mat-card-title>Monoblock</mat-card-title>
                         </mat-card-header>
-                        <div style="height: 325px;" class="align-center p-2">
+                        <div [ngStyle.gt-sm]="{'height' : '325px'}" [ngStyle.xs]="{'height' : '135px'}"
+                            class="align-center p-2">
                             <img mat-card-image src="{{row.image}}" alt="Monoblock">
                         </div>
                         <mat-card-actions fxLayoutAlign="start end">
@@ -58,7 +59,8 @@
                         </p>
                     </div>
                     <div class="mat-elevation-z" fxFlex="100" fxFlex.gt-sm="40" style=" margin: auto;">
-                        <img style="margin:auto" class="mat-elevation-z8" src="/assets/image/submersible-pump.jpeg">
+                        <img style="margin:auto" [ngStyle.xs]="{'height' : '323px'}" class="mat-elevation-z8"
+                            src="/assets/image/submersible-pump.jpeg">
                     </div>
                 </div>
             </div>
